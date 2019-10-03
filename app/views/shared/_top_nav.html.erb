@@ -1,0 +1,7 @@
+<ul>
+    <% @celebrities.length.times do |idx| %>
+
+        <li><%= link_to(@celebrities[idx]["name"], celebrity_path(idx)) %></li>
+
+    <% end %>
+</ul>

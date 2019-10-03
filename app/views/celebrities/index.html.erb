@@ -1,0 +1,11 @@
+<%= render "shared/top_nav" %>
+
+<h2>List of all the celebrities</h2>
+
+<ul>
+    <% for person in @celebrities %>
+
+        <li>Celebrity <%= person["name"] %> has a notability of <%= person["notability"] %> </li>
+
+    <% end %>
+</ul>

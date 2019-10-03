@@ -1,0 +1,12 @@
+<h2>Celebrity_id: <%= @id %></h2>
+
+<% if @id <= @celebrities.length %>
+
+    <ul>
+        <li>Name: <%= @celebrities[@id]["name"] %></li>
+        <li>Notability: <%= @celebrities[@id]["notability"] %></li>
+    </ul>
+
+<% else %>
+    <p>Celebrity not found</p>
+<% end %>
